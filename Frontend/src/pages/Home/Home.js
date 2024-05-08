@@ -4,6 +4,7 @@ import { createClient } from 'pexels';
 import { getPhotos } from '../../utils/config';
 import TravelTips from '../../Components/TravelTips';
 import { getArts } from '../../services/artService';
+import { Link, Navigate } from 'react-router-dom';
 
 const Home = ({theme}) => {
   
@@ -35,6 +36,10 @@ const Home = ({theme}) => {
     setNumPhotosDisplayed(numPhotosDisplayed - 6)
   }
 
+  const handleNavigate = (id) =>{
+  //  Navigate({to:`/${id}`})
+  }
+
   return (
     <div style={{with:'100%'}}>
     <div className={theme == "dark" ? styles.divHome_dark : ""}>
@@ -49,11 +54,10 @@ const Home = ({theme}) => {
       </div>
       <div className={styles.divPhotoPai}>
         {arts.slice(0, numPhotosDisplayed).map((art) => (
-          <div key={art.id} className={styles.photo_container}>
-            {console.log(art.id)}
-            <p> {art.title} </p>
+          <Link to={`/art/${art.id}`} key={art.id} className={styles.photo_container}>
+            <p  > {art.title} </p>
             <img src={art.thumbnail.lqip} alt={art.photographer} />
-          </div>
+          </Link>
         ))}
       </div>
 
