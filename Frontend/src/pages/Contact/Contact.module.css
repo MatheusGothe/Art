@@ -1,0 +1,53 @@
+.divContact_dark{
+    color: white;
+    font-size: 1.2em;
+}
+
+.divContact{
+    font-size: 1.2em;
+}
+/* Adicione essas regras ao arquivo Contact.module.css */
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+
+  .input_contact{
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  .textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #149ceb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #84a2f3;
+
+  }

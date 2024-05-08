@@ -1,0 +1,55 @@
+.divAbout{
+    font-size: 1.2em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    left: 20%;
+    min-height: 400px;
+
+}
+
+.divAbout_dark{
+    font-size: 1.2em;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    left: 20%;
+    min-height: 400px;
+}
+
+.p_about {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 720px){
+    .divAbout{
+        font-size: 1.2em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        left: 10%;
+        min-height: 400px;
+    }
+    .divAbout_dark{
+        font-size: 1.2em;
+        color: white;
+        flex-direction: column;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        left: 10%;
+        min-height: 400px;
+    }
+}
