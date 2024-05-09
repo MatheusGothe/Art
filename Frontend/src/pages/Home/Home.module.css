@@ -37,7 +37,7 @@
   }
   .photo_container p:hover {
     height: 40px;
-    color: red;
+    color: rgb(91, 91, 240);
   }
   
   .photo_container img {

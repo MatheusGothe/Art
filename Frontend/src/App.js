@@ -7,6 +7,7 @@ import Contact from './pages/Contact/Contact';
 import Navbar from './Components/Navbar';
 import { useEffect, useState } from 'react';
 import Footer from './Components/Footer';
+import CardDetail from './pages/CardDetail/CardDetail';
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
             <Route path='/' element={<Home theme={theme} />} />
             <Route path='/contact' element={<Contact theme={theme} />} />
             <Route path='/about' element={<About theme={theme} />} />
-            <Route path='/art/:id' element={''} />
+            <Route path='/art/:id' element={<CardDetail />} />
           </Routes>
           <Footer theme={theme} />
         </BrowserRouter>
