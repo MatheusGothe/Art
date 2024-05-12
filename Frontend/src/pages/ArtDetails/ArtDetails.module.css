@@ -1,0 +1,101 @@
+.artDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+.artHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.centeredImage {
+    text-align: center;
+
+}
+
+.artInfo {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 15px;
+    max-width: 100%;
+}
+
+
+
+.iconSave {
+  transition: transform 0.3s ease-in-out; 
+  cursor: pointer;
+}
+
+.iconSave:hover {
+  transform: scale(1.1); 
+}
+
+.iconSave.saved {
+  color: #007bff; 
+}
+
+.iconSave.saved:hover {
+  transform: scale(1.2); 
+}
+
+
+.divPai{
+    margin: 0 auto;
+    max-width: 720px;
+}   
+
+.artInfo p{
+    margin-bottom: -5px;
+    max-width: 100%;
+    text-align: justify;
+}
+.artImage{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .artDetailsContainer {
+      align-items: center; 
+      width: 90%;
+    }
+  
+    .artHeader {
+      align-items: flex-start; 
+    }
+  
+    .artInfo {
+      align-items: center; 
+    }
+  
+    .artImage {
+      width: 100%; 
+      max-width: 100%;
+      height: auto; 
+      border-radius: 0; 
+    }
+  
+    .artInfo p {
+      max-width: 100%; 
+      width: 100%;
+      text-align: justify;
+    }
+  
+    .iconSave {
+      margin-top: 10px; 
+      text-align: center;
+    }
+  }
